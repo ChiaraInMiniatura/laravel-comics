@@ -9,11 +9,16 @@
 <body>
     @section('content')
     <h4>card comic</h4>
-    {{-- @dump($data) --}}
 
-    {{-- <ul>
+    {{-- @dump($data)
+
+    <ul>
         @foreach ($comics as $comic )
-        <li>{{$comic->title}}</li>
+        <li>
+            <img src="{{ $comic->image }}" alt="{{ $comic->type }}">
+            <br>
+            {{$comic->title}}
+        </li>
 
         @endforeach
     </ul> --}}

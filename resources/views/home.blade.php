@@ -11,8 +11,8 @@
     @extends('layouts.main')
     @extends('card')
 
-    {{-- @section('content')
-    ???
-    @endsection --}}
+
+
+
 </body>
 </html>

@@ -17,10 +17,13 @@ Route::get('/', function () {
     return view('home');
 }) ->name('home');
 
+
 Route::get('/card', function () {
-    $data=config('comic');
-    return view('card', ['comic'=> $data]);
-}) ->name('card');
+
+    $data = config ('comics');
+
+    return view('comics', ['comics' => $data]);
+})->name('card');
 
 Route::get('/main', function () {
     return view('main');
